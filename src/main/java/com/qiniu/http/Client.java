@@ -74,7 +74,7 @@ public final class Client {
                     if (ips == null) {
                         throw new UnknownHostException(hostname + " resolve failed");
                     }
-                    List<InetAddress> l = new ArrayList<>();
+                    List<InetAddress> l = new ArrayList<InetAddress>();
                     Collections.addAll(l, ips);
                     return l;
                 }

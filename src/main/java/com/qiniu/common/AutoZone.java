@@ -15,7 +15,7 @@ import java.util.concurrent.ConcurrentHashMap;
 final class AutoZone extends Zone {
     static AutoZone instance = new AutoZone();
     private final String ucServer;
-    private Map<ZoneIndex, ZoneInfo> zones = new ConcurrentHashMap<>();
+    private Map<ZoneIndex, ZoneInfo> zones = new ConcurrentHashMap<ZoneIndex, ZoneInfo>();
     private Client client;
 
     AutoZone() {

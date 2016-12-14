@@ -38,7 +38,7 @@ public final class CdnManager {
     }
 
     public Response refreshUrlsAndDirs(String[] urls, String[] dirs) throws QiniuException {
-        HashMap<String, String[]> req = new HashMap<>();
+        HashMap<String, String[]> req = new HashMap<String, String[]>();
         if (urls != null) {
             req.put("urls", urls);
         }

@@ -37,7 +37,7 @@ public final class StreamUploader {
         this.key = key;
         this.params = params;
         this.mime = mime == null ? Client.DefaultMime : mime;
-        this.contexts = new ArrayList<>();
+        this.contexts = new ArrayList<String>();
         this.blockBuffer = new byte[Constants.BLOCK_SIZE];
         this.stream = stream;
     }
