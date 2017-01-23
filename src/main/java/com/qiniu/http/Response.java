@@ -218,6 +218,10 @@ public final class Response {
         return response.request().url().toString();
     }
 
+    public void close() {
+        this.response.close();
+    }
+
     public static class ErrorBody {
         public String error;
     }
