@@ -219,7 +219,8 @@ public final class Response {
     }
 
     public void close() {
-        this.response.close();
+        if (this.response != null)
+            this.response.close();
     }
 
     public static class ErrorBody {
